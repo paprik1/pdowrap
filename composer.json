@@ -1,0 +1,19 @@
+{
+    "name": "pprk/pdowrap",
+    "description": "A simple pdo wrapper",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pprk\\Pdowrap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "paprik",
+            "email": "keytothecity85@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
