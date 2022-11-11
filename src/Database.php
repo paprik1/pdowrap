@@ -1,6 +1,6 @@
 <?php
-
 namespace Pprk\Pdowrap;
+use \PDO;
 
 class Database {
 
@@ -12,7 +12,7 @@ class Database {
 			$this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 			$this->_db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 			$this->_db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-		} catch (PDOException $e) {
+		} catch (\PDOException $e) {
 			echo 'Could not connect to DB';
 			die;
 		}
